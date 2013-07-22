@@ -47,7 +47,7 @@ Note that Betty restricts it search for matching content to the bucket's destina
 so if duplicate content exists in a part of the bucket that is not being synced,
 there will be no benefits.
 
-## Things probably won't work
+## Things that probably won't work
 
 - Uploading large files.
 - Betty is not resistant upload errors.
