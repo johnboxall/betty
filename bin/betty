@@ -2,7 +2,7 @@
 "use strict"
 
 var program = require('commander');
-var SSS = require("..");
+var Betty = require("..");
 
 program.version('0.0.0');
 program.usage('<source> [destination] <bucket>');
@@ -29,9 +29,9 @@ var options = {
     dryRun: program.dryRun
 };
 
-var client = SSS.client(options);
+var client = Betty.client(options);
 
-SSS(client, source, destination, function(err) {
+Betty(client, source, destination, function(err) {
     if (err) {
         console.log(err);
         return process.exit(1);

@@ -4,7 +4,7 @@ var SSS = require("..");
 var Assert = require("assert");
 
 
-describe("sss.utils", function() {
+describe("betty.utils", function() {
     specify('.getHeaders()', function() {
         var expected = {
             "x-amz-acl": "public-read",

@@ -1,0 +1,71 @@
+{
+  "name": "sss",
+  "version": "0.0.0",
+  "dependencies": {
+    "async": {
+      "version": "0.2.9",
+      "from": "async@"
+    },
+    "commander": {
+      "version": "2.0.0",
+      "from": "commander@",
+      "resolved": "https://registry.npmjs.org/commander/-/commander-2.0.0.tgz"
+    },
+    "filewalker": {
+      "version": "0.1.2",
+      "from": "filewalker@",
+      "dependencies": {
+        "fqueue": {
+          "version": "0.0.0",
+          "from": "fqueue@0.0.x"
+        }
+      }
+    },
+    "knox": {
+      "version": "0.8.4",
+      "from": "knox@0.8.4",
+      "resolved": "https://registry.npmjs.org/knox/-/knox-0.8.4.tgz",
+      "dependencies": {
+        "xml2js": {
+          "version": "0.2.8",
+          "from": "xml2js@0.2.x",
+          "dependencies": {
+            "sax": {
+              "version": "0.5.4",
+              "from": "sax@0.5.x"
+            }
+          }
+        },
+        "stream-counter": {
+          "version": "0.1.0",
+          "from": "stream-counter@~0.1.0",
+          "dependencies": {
+            "readable-stream": {
+              "version": "1.0.2",
+              "from": "readable-stream@~1.0.2"
+            }
+          }
+        }
+      }
+    },
+    "mime": {
+      "version": "1.2.9",
+      "from": "mime@"
+    },
+    "s3-lister": {
+      "version": "0.1.0",
+      "from": "s3-lister@",
+      "resolved": "https://registry.npmjs.org/s3-lister/-/s3-lister-0.1.0.tgz",
+      "dependencies": {
+        "readable-stream": {
+          "version": "1.0.2",
+          "from": "readable-stream@~1.0.2"
+        }
+      }
+    },
+    "debug": {
+      "version": "0.7.2",
+      "from": "debug@"
+    }
+  }
+}

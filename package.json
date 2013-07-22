@@ -1,16 +1,18 @@
 {
-    "name": "sss",
-    "description": "sss - super simple sync - s3 uploader",
-    "version": "0.0.0",
+    "name": "betty",
+    "description": "betty is a command line utility for syncing static websites to s3",
+    "version": "0.0.1",
     "author": "John Boxall <john@mobify.com>",
     "license": "MIT",
     "main": "./lib/index.js",
     "repository": {
         "type": "git",
-        "url": "git://github.com/johnboxall/sss.git"
+        "url": "git://github.com/johnboxall/betty.git"
     },
     "dependencies": {
         "async": "0.2.9",
+        "commander": "2.0.0",
+        "debug": "0.7.2",
         "filewalker": "0.1.2",
         "knox": "0.8.4",
         "mime": "1.2.9",
