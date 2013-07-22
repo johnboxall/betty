@@ -24,6 +24,9 @@
     "scripts": {
         "test": "mocha"
     },
+    "bin": {
+        "betty": "./bin/betty"
+    },
     "directories": {
         "lib": "./lib"
     },
