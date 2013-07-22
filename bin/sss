@@ -1,0 +1,41 @@
+#!/usr/bin/env node
+"use strict"
+
+var program = require('commander');
+var SSS = require("..");
+
+program.version('0.0.0');
+program.usage('<source> [destination] <bucket>');
+program.option('-d, --dry-run', 'no changes')
+program.parse(process.argv);
+
+if (program.args.length < 2) {
+    program.help();
+}
+
+if (!program.args[2]) {
+    program.args.splice(1, 0, "");
+}
+
+var source = program.args[0];
+var destination = program.args[1];
+var bucket = program.args[2];
+
+
+var options = {
+    key: process.env.AWS_ACCESS_KEY,
+    secret: process.env.AWS_SECRET_ACCESS_KEY,
+    bucket: bucket,
+    dryRun: program.dryRun
+};
+
+var client = SSS.client(options);
+
+SSS(client, source, destination, function(err) {
+    if (err) {
+        console.log(err);
+        return process.exit(1);
+    }
+
+    process.exit(0);
+});

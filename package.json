@@ -1,0 +1,31 @@
+{
+    "name": "sss",
+    "description": "sss - super simple sync - s3 uploader",
+    "version": "0.0.0",
+    "author": "John Boxall <john@mobify.com>",
+    "license": "MIT",
+    "main": "./lib/index.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/johnboxall/sss.git"
+    },
+    "dependencies": {
+        "async": "0.2.9",
+        "filewalker": "0.1.2",
+        "knox": "0.8.4",
+        "mime": "1.2.9",
+        "s3-lister": "0.1.0"
+    },
+    "devDependencies": {
+        "mocha": "*"
+    },
+    "scripts": {
+        "test": "mocha"
+    },
+    "directories": {
+        "lib": "./lib"
+    },
+    "engines": {
+        "node": ">= 0.8"
+    }
+}
